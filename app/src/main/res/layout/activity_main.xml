@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.example.classificationcloth.MainActivity"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:gravity="center"
+        tools:srcCompat="@tools:sample/avatars" />
+
+
+    <!--
+    <Button
+        android:id="@+id/btnSelect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="20dp"
+        android:text="Select" />
+        -->
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="80dp"></Space>
+
+
+    <Button
+        android:id="@+id/btnPredict"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="20dp"
+        android:text="Predict"
+        android:enabled="false"
+        />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="364dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColorHint="@color/color_gray"
+        android:padding="20dp"/>
+
+
+    <TextView
+        android:id="@+id/search"
+        android:layout_width="364dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:gravity="center"
+        android:linksClickable="true"
+        android:padding="20dp"
+        android:text="@string/search"
+        android:onClick="openSecondWindow"
+        android:clickable="true"
+        android:textAlignment="center"
+        android:visibility="invisible"
+        android:textColorHint="@color/color_gray"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp"></Space>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="40dp"
+        android:contentDescription="photo"
+        app:backgroundTint="@color/color_green_200"
+        app:srcCompat="@android:drawable/ic_menu_camera"
+        app:maxImageSize="50dp"
+        app:fabCustomSize="60dp"/>
+
+
+</LinearLayout>
