@@ -1,4 +1,4 @@
-# 👚 ClassificationCloth 
+# 👚 ClassificationCloth 👚 
 
 <img align="center" src="img/concept.png">
 
